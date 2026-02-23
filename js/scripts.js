@@ -1,3 +1,4 @@
+/* js/scripts.js for bbauska/Airport-Distance making Airport-Distance.bauska.org */
 console.clear();
 
 new Vue({
@@ -28,14 +29,10 @@ new Vue({
       fill: '#00b26b',
       current: false }] }),
 
-
-
-
   filters: {
     numberWithCommas(val) {
       return val && val.toString ? val.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",") : val;
     } },
-
 
   mounted() {
 
@@ -96,12 +93,9 @@ new Vue({
       });
       this.markerDistance();
     });
-
-
   },
 
   methods: {
-
     randomAirport() {
       return this.airports[Math.floor(Math.random() * this.airports.length)];
     },
@@ -129,7 +123,6 @@ new Vue({
           onComplete: function () {
             if (oldTween) {oldTween.kill();}
           } });
-
 
         this.airplaneFade = tl;
       }
