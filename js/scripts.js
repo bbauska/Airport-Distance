@@ -1,4 +1,4 @@
-/* js/scripts.js for bbauska/Airport-Distance making Airport-Distance.bauska.org */
+/* js/scripts.js for bbauska/Airport-map making Airport-map.bauska.org */
 console.clear();
 
 new Vue({
